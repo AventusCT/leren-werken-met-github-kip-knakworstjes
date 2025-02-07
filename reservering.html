@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserveren - The Urban Barber</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        section {
+            padding: 2rem;
+            margin: 1rem auto;
+            max-width: 800px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label, select, input, textarea, button {
+            margin: 0.5rem 0;
+            font-size: 1rem;
+        }
+        button {
+            padding: 0.5rem;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Maak een Reservering</h1>
+        <nav>
+            <a href="homepage.html">Home</a>
+            <a href="reservering.html">Reserveren</a>
+            <a href="infopagina.html">Informatie</a>
+            <a href="medewerkersinfo.html">Medewerkers</a>
+            <a href="review.html">Reviews</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Reserveren</h2>
+        <form>
+            <label for="name">Naam:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="date">Datum:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Tijd:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="kapper">Kies een kapper:</label>
+            <select id="kapper" name="kapper" required>
+                <option value="">Selecteer een kapper</option>
+                <option value="skibidi_sigma">Skibidi Sigma - Specialist in creative cuts en fade-stylen</option>
+                <option value="p_diddy">P Diddy - Expert in dreads en locks</option>
+                <option value="drake">Drake - Meester in buzzcuts en lower taper fades</option>
+                <option value="Gloop">Gloop - Beroemd om kleuren, highlights en extensions</option>
+            </select>
+
+            <label for="service">Kies een dienst:</label>
+            <select id="service" name="service" required>
+                <option value="">Selecteer een dienst</option>
+                <option value="wassen">Wassen</option>
+                <option value="knippen">Knippen</option>
+                <option value="stylen">Stylen</option>
+                <option value="kleuren">Kleuren & Bleken</option>
+                <option value="extensions">Extensions</option>
+                <option value="dreads">Dreads</option>
+                <option value="buzzcut">Buzzcut</option>
+                <option value="fade">Taper Fade</option>
+            </select>
+
+            <label for="message">Opmerkingen (optioneel):</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit">Verzenden</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 The Urban Barber. Alle rechten voorbehouden.</p>
+    </footer>
+</body>
+</html>
+
